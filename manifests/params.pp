@@ -30,9 +30,9 @@ class puppetdb::params {
   # not the user explicitly specified a value.  See implementation in
   # `postgresql.pp`.  We should change this back to `true` when we get rid
   # of `manage_redhat_firewall`.
-  $open_postgres_port        = undef
+  $open_postgres_port     = undef
 
-  $database                  = 'postgres'
+  $database               = 'postgres'
 
   # The remaining database settings are not used for an embedded database
   $database_host          = 'localhost'
